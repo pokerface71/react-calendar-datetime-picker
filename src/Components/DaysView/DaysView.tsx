@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useMemo } from 'react'
 import {
   addZero,
   getDateTimeStamp,
@@ -202,9 +202,16 @@ const DaysView = ({ type }: IDaysProps) => {
     }
     return classes
   }
-  const daysForCurrentMonth = createDaysForCurrentMonth(year, month)
-  const daysForNextMonth = createDaysForNextMonth(year, month)
-  const daysForPreviousMonth = createDaysForPreviousMonth(year, month)
+
+  const daysForCurrentMonth = useMemo(() => {
+    return createDaysForCurrentMonth(year, month)
+  }, [year, month])
+  const daysForNextMonth = useMemo(() => {
+    return createDaysForNextMonth(year, month)
+  }, [year, month])
+  const daysForPreviousMonth = useMemo(() => {
+    return createDaysForPreviousMonth(year, month)
+  }, [year, month])
 
   return (
     <ul className='daysList'>
