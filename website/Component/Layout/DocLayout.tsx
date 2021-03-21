@@ -1,12 +1,13 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react'
-import { NavLink, useLocation } from 'react-router-dom'
+import Link from 'next/link'
+import { useRouter } from 'next/router'
 import { Layout } from '..'
 export interface IDocLayout {
   children: React.ReactElement | React.ReactElement[]
 }
 const DocLayout = ({ children }: IDocLayout) => {
-  const pathname = useLocation().pathname.toLocaleLowerCase()
-  const hash = useLocation().hash.toLocaleLowerCase()
+  const router = useRouter()
   return (
     <Layout>
       <div className='flex '>
@@ -14,49 +15,37 @@ const DocLayout = ({ children }: IDocLayout) => {
           <div className='fixed' style={{ width: '240px' }}>
             <h2 className='font-bold text-text text-lg'>Usage</h2>
             <div className='pl-2'>
-              <NavLink
-                className='block  text-text hover:text-primary  my-2'
-                activeClassName='is-active'
-                to='/docs/get-started'
-              >
-                Get started
-              </NavLink>
-              <NavLink
-                className='block  text-text hover:text-primary  my-2'
-                activeClassName='is-active'
-                to='/docs/props'
-              >
-                Props
-              </NavLink>
-              <NavLink
-                className='block  text-text hover:text-primary  my-2'
-                activeClassName='is-active'
-                to='/docs/customization'
-              >
-                Customization
-              </NavLink>
-              <NavLink
-                className='block  text-text hover:text-primary  my-2'
-                activeClassName='is-active'
-                to='/docs/utilities'
-              >
-                Utilities
-              </NavLink>
-              <NavLink
-                className='block  text-text hover:text-primary  my-2'
-                activeClassName='is-active'
-                to='/docs/typescript'
-              >
-                Typescript
-              </NavLink>
-              <NavLink
-                className='block  text-text hover:text-primary  my-2'
-                activeClassName='is-active'
-                to='/docs/examples'
-              >
-                Examples
-              </NavLink>
-              {pathname.includes('/examples') && (
+              <Link href='/docs/get-started'>
+                <a className='block text-text hover:text-primary  my-2'>
+                  Get started
+                </a>
+              </Link>
+              <Link href='/docs/props'>
+                <a className='block text-text hover:text-primary  my-2'>
+                  Props
+                </a>
+              </Link>
+              <Link href='/docs/customization'>
+                <a className='block text-text hover:text-primary  my-2'>
+                  Customization
+                </a>
+              </Link>
+              <Link href='/docs/utilities'>
+                <a className='block text-text hover:text-primary  my-2'>
+                  Utilities
+                </a>
+              </Link>
+              <Link href='/docs/typescript'>
+                <a className='block text-text hover:text-primary  my-2'>
+                  Typescript
+                </a>
+              </Link>
+              <Link href='/docs/examples'>
+                <a className='block text-text hover:text-primary  my-2'>
+                  Examples
+                </a>
+              </Link>
+              {/* {router.pathname.includes('/examples') && (
                 <div className='hidden md:block'>
                   <a
                     className={`block pl-5 text-sm pb-2 hover:text-primary leading-snug ${
@@ -184,7 +173,7 @@ const DocLayout = ({ children }: IDocLayout) => {
                     Custom calender
                   </a>
                 </div>
-              )}
+              )} */}
             </div>
           </div>
         </div>

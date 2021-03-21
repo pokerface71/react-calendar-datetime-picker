@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link, NavLink } from 'react-router-dom'
+import Link from 'next/link'
 
 const Header = () => {
   return (
@@ -7,9 +7,11 @@ const Header = () => {
       <nav className='flex items-center justify-between flex-wrap bg-teal p-4 bg-primary text-text-lightest'>
         <div className='flex items-center flex-no-shrink text-text-lightest mr-6'>
           <span className='text-xl text-text-lightest font-medium'>
-            <Link to='/'>
-              React calendar date-time picker{' '}
-              <span className='text-xs ml-2'>v1.3.2</span>
+            <Link href='/'>
+              <>
+                React calendar date-time picker{' '}
+                <span className='text-xs ml-2'>v1.3.2</span>
+              </>
             </Link>
           </span>
         </div>
@@ -22,20 +24,16 @@ const Header = () => {
       </div> */}
         <div className='flex-grow flex items-center w-auto text-right'>
           <div className='text-sm flex-grow'>
-            <NavLink
-              className='block inline-block mt-0 text-text-lightest hover:text-white mr-4 font-extralight'
-              // activeClassName='is-active'
-              to='/docs/get-started'
-            >
-              Docs
-            </NavLink>
-            <NavLink
-              className='block inline-block mt-0 text-text-lightest hover:text-white mr-4 font-extralight'
-              // activeClassName='is-active'
-              to='/docs/Examples'
-            >
-              Examples
-            </NavLink>
+            <Link href='/docs/get-started'>
+              <a className='block inline-block mt-0 text-text-lightest hover:text-white mr-4 font-extralight'>
+                Docs
+              </a>
+            </Link>
+            <Link href='/docs/examples'>
+              <a className='block inline-block mt-0 text-text-lightest hover:text-white mr-4 font-extralight'>
+                Examples
+              </a>
+            </Link>
             <a
               className='block inline-block mt-0 text-text-lightest hover:text-white mr-4 font-extralight'
               href='https://github.com/mmehdinasiri/react-calendar-datetime-picker'
