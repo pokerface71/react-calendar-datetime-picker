@@ -1,11 +1,11 @@
-import { useState } from 'react'
+import { useState, FC } from 'react'
 import { DocLayout } from '../../Component'
 import SyntaxHighlighter from 'react-syntax-highlighter'
 import { tomorrowNightEighties } from 'react-syntax-highlighter/dist/cjs/styles/hljs'
 import DtPicker, { Day, Range, Multi } from 'react-calendar-datetime-picker'
 import { typescriptStr } from '../../Constant/sampleString'
 
-const Typescript = () => {
+const Typescript: FC = () => {
 	const [date, setDate] = useState<Day>()
 	const [dateRange, setDateRange] = useState<Range>(null)
 	const [dateMulti, setDateMulti] = useState<Multi>(null)

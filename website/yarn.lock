@@ -3439,21 +3439,13 @@ raw-body@2.4.1:
     iconv-lite "0.4.24"
     unpipe "1.0.0"
 
-react-calendar-datetime-picker@^1.3.2:
-  version "1.3.2"
-  resolved "https://registry.yarnpkg.com/react-calendar-datetime-picker/-/react-calendar-datetime-picker-1.3.2.tgz#ddb64da2eaee397a1f5b18f2606281d5bee47dfe"
-  integrity sha512-LnCx9e77/oGYQufWYtmvzfQk5vnUm6yqdxH00xZLnJgYRYugHfoNwsuSkg5rxSAO2XwOsW273Im/E/ARZpLW3w==
-  dependencies:
-    persian-date "^1.1.0"
+"react-calendar-datetime-picker@link:../lib":
+  version "0.0.0"
+  uid ""
 
-react-dom@17.0.1:
-  version "17.0.1"
-  resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-17.0.1.tgz#1de2560474ec9f0e334285662ede52dbc5426fc6"
-  integrity sha512-6eV150oJZ9U2t9svnsspTMrWNyHc6chX0KzDeAOXftRa8bNeOKTTfCJ7KorIwenkHd2xqVTBTCZd79yk/lx/Ug==
-  dependencies:
-    loose-envify "^1.1.0"
-    object-assign "^4.1.1"
-    scheduler "^0.20.1"
+"react-dom@link:../lib/node_modules/react-dom":
+  version "0.0.0"
+  uid ""
 
 react-is@16.13.1, react-is@^16.8.1:
   version "16.13.1"
@@ -3476,13 +3468,9 @@ react-syntax-highlighter@^15.4.3:
     prismjs "^1.22.0"
     refractor "^3.2.0"
 
-react@17.0.1:
-  version "17.0.1"
-  resolved "https://registry.yarnpkg.com/react/-/react-17.0.1.tgz#6e0600416bd57574e3f86d92edba3d9008726127"
-  integrity sha512-lG9c9UuMHdcAexXtigOZLX8exLWkW0Ku29qPRU8uhF2R9BN96dLCt0psvzPLlHc5OWkgymP3qwTRgbnw5BKx3w==
-  dependencies:
-    loose-envify "^1.1.0"
-    object-assign "^4.1.1"
+"react@link:../lib/node_modules/react":
+  version "0.0.0"
+  uid ""
 
 read-cache@^1.0.0:
   version "1.0.0"
