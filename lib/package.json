@@ -30,8 +30,7 @@
     "test:lint": "eslint .",
     "test:unit": "cross-env CI=1 react-scripts test --env=jsdom",
     "test:watch": "react-scripts test --env=jsdom",
-    "predeploy": "cd website && yarn install && yarn run build",
-    "deploy": "gh-pages -d website/build"
+    "deploy": "cd ../website && rimraf out && yarn build && yarn export && touch out/.nojekyll && gh-pages -d out -t true"
   },
   "peerDependencies": {
     "react": "^16.0.0"
