@@ -3439,10 +3439,10 @@ raw-body@2.4.1:
     iconv-lite "0.4.24"
     unpipe "1.0.0"
 
-react-calendar-datetime-picker@^1.3.3:
-  version "1.3.3"
-  resolved "https://registry.yarnpkg.com/react-calendar-datetime-picker/-/react-calendar-datetime-picker-1.3.3.tgz#f707b7633c33c57c8aa6b2ec3754f7d4c8d4e16e"
-  integrity sha512-H25rD/EbSU9lGgdpPQt3y4UltgCWM2Ai2d8z/zvYXlfhGpaRxtnMtkJM250qA6IcEfFm5QcTdcriMburrlEqMg==
+react-calendar-datetime-picker@^1.3.4:
+  version "1.3.4"
+  resolved "https://registry.yarnpkg.com/react-calendar-datetime-picker/-/react-calendar-datetime-picker-1.3.4.tgz#024d80f2d8d064fd23bc418e0f1dcb6495a0a9ed"
+  integrity sha512-yFkdOm0/gFImNly4mkxE8I7kKyDe8oO1grhgIf9xFubOAGJ2q64cXtfwjQdgMuPsGujKV+KG7XhVLIRN1xnM1Q==
   dependencies:
     persian-date "^1.1.0"
 
