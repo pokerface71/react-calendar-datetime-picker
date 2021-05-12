@@ -2,13 +2,19 @@ import React, { useState } from 'react'
 import Link from 'next/link'
 import { Layout } from '../Component'
 import { DtCalendar } from 'react-calendar-datetime-picker'
-
+const metaDetail = [
+	{
+		name: 'description',
+		content:
+			'best react calender datetime picker - Supports Gregorian and Jalali calender & Supports Typescript & Uses context api to share data'
+	}
+]
 const Home = () => {
 	const [withoutInputEn, setWithoutInputEn] = useState(null)
 	const [withoutInputFa, setWithoutInputFa] = useState(null)
 	console.log(withoutInputFa, withoutInputEn)
 	return (
-		<Layout>
+		<Layout metaName={metaDetail}>
 			<div className='mx-auto text-center '>
 				<h1 className='text-4xl text-primary font-extrabold mb-2'>
 					React Calendar Date-Time Picker

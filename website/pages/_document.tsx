@@ -13,14 +13,6 @@ class MyDocument extends Document {
 			<Html>
 				<Head>
 					<link
-						rel='canonical'
-						href='https://mmehdinasiri.github.io/react-calendar-datetime-picker/'
-					/>
-					<meta
-						name='description'
-						content='best react calender datetime picker - Supports Gregorian and Jalali calender & Supports Typescript & Uses context api to share data'
-					/>
-					<link
 						rel='apple-touch-icon'
 						sizes='76x76'
 						href={`${process.env.prefix}/favicon/apple-touch-icon.png`}
