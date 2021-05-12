@@ -14,7 +14,7 @@ const Home = () => {
 	const [withoutInputFa, setWithoutInputFa] = useState(null)
 	console.log(withoutInputFa, withoutInputEn)
 	return (
-		<Layout metaName={metaDetail}>
+		<Layout metaName={metaDetail} canonical={`${process.env.prefix}/`}>
 			<div className='mx-auto text-center '>
 				<h1 className='text-4xl text-primary font-extrabold mb-2'>
 					React Calendar Date-Time Picker
